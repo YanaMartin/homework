@@ -5,7 +5,7 @@ class Family:
     """Introducing my family"""
 
     def __init__(self, name):
-        """The first name of the family member colculated according to today's date"""
+        """The first name of the family member"""
         self.name = name
 
     def __str__(self):
@@ -16,7 +16,7 @@ class Family:
         print('{} is living in {}'. format(self.name, city))
     
     def age(self, year, month, day):
-        """The age in years of each family member"""
+        """The age in years of each family member, colculated according to today's date"""
         birthday = date(year, month, day)
         today = date.today()
         age = today.year - birthday.year -((today.month, today.day) < (birthday.month, birthday.day))
