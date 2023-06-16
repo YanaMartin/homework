@@ -5,7 +5,7 @@ class Family:
     """Introducing my family"""
 
     def __init__(self, name):
-        """The first name of the family member"""
+        """The first name of the family member colculated according to today's date"""
         self.name = name
 
     def __str__(self):
